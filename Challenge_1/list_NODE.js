@@ -23,7 +23,7 @@ const containsConsecutiveNumbers = arr => {
     // Sort the array
     arr.sort();
     arr.forEach((e, i) => {
-        if ((arr[i + 1] - arr[i]) > 1) {
+        if ((arr[i + 1] - arr[i]) != 1) {
             tempBool = false;
         } 
     });

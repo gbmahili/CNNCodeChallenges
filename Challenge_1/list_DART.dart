@@ -29,7 +29,7 @@ bool containsConsecutiveNumbers(List arr) {
   
   for (int i = 0; i < arr.length; i++) {
     if (i + 1 < arr.length) {
-      if ((arr[i + 1] - arr[i]) > 1) {
+      if ((arr[i + 1] - arr[i]) != 1) {
         tempBool = false;
         return tempBool;
       }

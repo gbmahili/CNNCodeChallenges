@@ -16,7 +16,7 @@ const test3 = [7, 8, 9];
 const test4 = [5, 3, 2, 4];
 const test5 = 'Hello String';
 const test6 = [];
-const test7 = [2,2];
+const test7 = [1,1,1];
 const containsConsecutiveNumbers = arr => {
     let tempBool = true;
     // Validation:
