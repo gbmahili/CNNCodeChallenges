@@ -16,6 +16,7 @@ const test3 = [7, 8, 9];
 const test4 = [5, 3, 2, 4];
 const test5 = 'Hello String';
 const test6 = [];
+const test7 = [2,2];
 const containsConsecutiveNumbers = arr => {
     let tempBool = true;
     // Validation:
@@ -27,11 +28,11 @@ const containsConsecutiveNumbers = arr => {
     // Sort the array
     arr.sort();
     arr.forEach((e, i) => {
-        if ((arr[i + 1] - arr[i]) > 1) {
+        if ((arr[i + 1] - arr[i])  != 1) {
             tempBool = false;
         } 
     });
     return tempBool;
 }
-const x = containsConsecutiveNumbers(test2);
+const x = containsConsecutiveNumbers(test7);
 console.log(x);
